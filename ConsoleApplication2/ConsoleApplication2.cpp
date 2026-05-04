@@ -1,16 +1,11 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>
 #include <iomanip>
-
-int main() {
+using namespace std;
+int main()
+{
     setlocale(LC_ALL, "");
-
-    std::cout << std::fixed << std::setprecision(6);
-    std::cout << "=========== Задание а) ========" << std::endl;
-
-    double expr_a = sqrt(4.12 + log(2)) - sin(0.5) + atan(-3.0 / 4.0);
-    std::cout << "sqrt(4.12 + ln2) - sin(1/2) + arctg(-3/4) = " << expr_a << std::endl;
-    std::cout << std::endl;
-
-    return 0;
+    cout << std::fixed << setprecision(6);
+    double rez = pow(4.12 + log(2), 1.0 / 3.0) - sin(0.5) + atan(-0.75);
+    cout << "Результат:" << rez << endl;
 }
